@@ -3,13 +3,18 @@ body {
   font-family: monospace;
   color-scheme: light dark;
   color: white;
-  font-size: 20px;
-  background-color: #242424;
+  font-size: 16px;
+  background-color: rgb(36, 36, 36);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+}
+
+p {
+  padding: 13px;
 }
 
 a {

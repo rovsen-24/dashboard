@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.center {
+  @apply text-center justify-center items-center
+}
