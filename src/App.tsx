@@ -4,25 +4,29 @@ import { Contact } from "./pages/Contact";
 import { Dashboard } from "./pages/Dashboard";
 import { About } from "./pages/About";
 import { TermsAndPrivacy } from "./pages/TermsAndPrivacy";
-import { Nav } from "./components/navbar";
+import { Navbar } from "./components/navbar";
 import { Foobar } from "./components/foobar";
+import { Docs } from "./pages/Docs";
 
 function Main() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="contact" element={<Contact />} />
-      <Route path="about" element={<About />} />
-      <Route path="dashboard" element={<Dashboard />} />
-      <Route path="termsandprivacy" element={<TermsAndPrivacy />} />
-    </Routes>
+    <div className="sm:p-5 text-xs md:text-base">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="docs" element={<Docs />} />
+        <Route path="contact" element={<Contact />} />
+        <Route path="about" element={<About />} />
+        <Route path="dashboard" element={<Dashboard />} />
+        <Route path="termsandprivacy" element={<TermsAndPrivacy />} />
+      </Routes>
+    </div>
   );
 }
 
 export default function App() {
   return (
     <div>
-      <Nav />
+      <Navbar />
       <Main />
       <Foobar />
     </div>

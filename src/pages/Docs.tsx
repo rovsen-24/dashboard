@@ -1,8 +1,7 @@
-export function Home() {
+export function Docs() {
   return (
     <div>
-      Dashboards are one of the most useful data visualization tools. Learn more
-      about them and how they can help you understand important data.
+      Docs
     </div>
   );
 }

@@ -2,6 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
-.center {
-  @apply text-center justify-center items-center
+@layer base {
+  h1 {
+    @apply text-3xl font-medium
+  }
+
+  h2 {
+    @apply text-2xl font-medium
+  }
+
+  h3 {
+    @apply text-xl font-medium
+  }
+
+  p {
+    @apply sm:p-5 p-2 leading-snug tracking-tight 
+  }
+
+  .col {
+    @apply flex flex-col
+  }
+
+  .center {
+    @apply text-center justify-center items-center
+  }
+}
+
+html,
+body {
+  font-family: monospace;
+  color-scheme: light dark;
+  color: rgba(221, 221, 221, 0.897);
+  font-size: 16px;
+  background-color: rgb(27, 27, 27);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+}
+
+a:hover {
+  color: rgb(52, 157, 243);
 }

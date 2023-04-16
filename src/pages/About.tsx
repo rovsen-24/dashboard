@@ -1,54 +1,7 @@
-const items: { title: string; text: string }[] = [
-  {
-    title: "What is a dashboard?",
-    text: `In this day and age, understanding data is the key to making the best decisions
-    for any business. However, the amount of information that’s available at any time can
-    be overwhelming for the most data-savvy person.
-  So what’s the key to making data-driven decisions? Finding the
-   most important data and formatting it in a way that’s easy to understand. This can change,
-    depending on who will view the data. If you’re an industry expert, you may find complex 
-    data easier to understand. If you’re presenting data to less well-versed stakeholders at 
-    your company, you may need to simplify it before sharing it with others.
-  One of the easiest ways to make data easy to understand for technical and non-technical 
-  audiences is to create a dashboard that easily displays all of your data visualizations
-   in one place.
-  `,
-  },
-  {
-    title: "Dashboard definition",
-    text: `In this day and age, understanding data is the key to making the best
-  decisions for any business. However, the amount of information that’s
-  available at any time can be overwhelming for the most data-savvy
-  person. So what’s the key to making data-driven decisions? Finding the
-  most important data and formatting it in a way that’s easy to
-  understand. This can change, depending on who will view the data. If
-  you’re an industry expert, you may find complex data easier to
-  understand. If you’re presenting data to less well-versed stakeholders
-  at your company, you may need to simplify it before sharing it with
-  others. One of the easiest ways to make data easy to understand for
-  technical and non-technical audiences is to create a dashboard that
-  easily displays all of your data visualizations in one place.`,
-  },
-
-  { title: "", text: `` },
-  { title: "", text: `` },
-  { title: "", text: `` },
-  { title: "", text: `` },
-];
-
-const listItems = items.map((item, index) => {
-  return (
-    <div key={index} className="">
-      <p className="text-xl">{item.title}</p>
-      <p>{item.text}</p>
-    </div>
-  );
-});
-
 export function About() {
   return (
     <div className="">
-      <p className="text-3xl center">What is a dashboard?</p>
+      <h1 className="center">What is a dashboard?</h1>
       <p>
         In this day and age, understanding data is the key to making the best
         decisions for any business. However, the amount of information that’s
@@ -66,20 +19,20 @@ export function About() {
       <p>
         One of the easiest ways to make data easy to understand for technical
         and non-technical audiences is to create a dashboard that easily
-        displays all of your data visualizations in one place.
+        displays all of your data visualizations in one place. <br />
+        In this article, we will run through:
+        <ul className="list-disc p-4">
+          <li>Dashboard definition</li>
+          <li>How dashboards work</li>
+          <li>Uses</li>
+          <li>Importance</li>
+          <li>How to create a dashboard</li>
+          <li>Types of dashboards</li>
+          <li>Best practices</li>
+          <li>Benefits</li>
+        </ul>
       </p>
-      <ul className="list-disc mx-10">
-        <li>Dashboard definition</li>
-        <li>How dashboards work</li>
-        <li>Uses</li>
-        <li>Importance</li>
-        <li>How to create a dashboard</li>
-        <li>Types of dashboards</li>
-        <li>Best practices</li>
-        <li>Benefits</li>
-      </ul>
-      {listItems}
-      <p>Dashboard definition</p>
+      <h3>Dashboard definition</h3>
       <p>
         A dashboard is a way of displaying various types of visual data in one
         place. Usually, a dashboard is intended to convey different, but related
@@ -94,57 +47,65 @@ export function About() {
         who aren’t as close to the data can quickly and easily understand the
         story it tells or the insights it reveals.
       </p>
-      <p></p>
+      <h3>How do dashboards work?</h3>
       <p>
-        Tempor orci dapibus ultrices in iaculis nunc sed augue lacus. In
-        pellentesque massa placerat duis ultricies. Sit amet massa vitae tortor
-        condimentum. Morbi tincidunt augue interdum velit euismod. Aliquet enim
-        tortor at auctor urna nunc id. A scelerisque purus semper eget. Vitae
-        justo eget magna fermentum iaculis. Arcu non odio euismod lacinia at
-        quis. Et leo duis ut diam quam nulla porttitor massa. Eget nunc
-        scelerisque viverra mauris. Suscipit tellus mauris a diam maecenas sed
-        enim. Cras sed felis eget velit aliquet. Est placerat in egestas erat
-        imperdiet sed euismod nisi porta. In ante metus dictum at tempor
-        commodo. In cursus turpis massa tincidunt dui ut ornare lectus. Tempus
-        iaculis urna id volutpat. Iaculis eu non diam phasellus vestibulum lorem
-        sed risus.
+        Dashboards take data from different sources and aggregate it so
+        non-technical people can more easily read and interpret it. With
+        interactive elements, it helps anyone using the dashboard better
+        understand certain points, explore areas of increased interest, and
+        support more questioning to arrive at key insights or make key
+        decisions.
       </p>
+      <h3>Dashboard uses</h3>
       <p>
-        Ridiculus mus mauris vitae ultricies leo integer malesuada nunc vel.
-        Imperdiet massa tincidunt nunc pulvinar sapien et ligula ullamcorper
-        malesuada. Faucibus pulvinar elementum integer enim neque volutpat.
-        Gravida arcu ac tortor dignissim convallis aenean. Lectus quam id leo in
-        vitae. Ultricies tristique nulla aliquet enim tortor. Nec tincidunt
-        praesent semper feugiat nibh sed. Imperdiet proin fermentum leo vel orci
-        porta non pulvinar neque. Praesent semper feugiat nibh sed pulvinar
-        proin gravida. Dis parturient montes nascetur ridiculus mus mauris.
-        Rhoncus dolor purus non enim praesent elementum facilisis leo vel. Ut
-        lectus arcu bibendum at. Integer enim neque volutpat ac. Diam sit amet
-        nisl suscipit. Eros donec ac odio tempor orci dapibus ultrices in
-        iaculis. Ullamcorper a lacus vestibulum sed arcu non odio euismod. Quis
-        lectus nulla at volutpat diam ut. Turpis egestas integer eget aliquet.
-        Adipiscing tristique risus nec feugiat in fermentum posuere. Morbi
-        tempus iaculis urna id. Amet commodo nulla facilisi nullam vehicula
-        ipsum a arcu.
+        The main use of a dashboard is to show a comprehensive overview of data
+        from different sources. Dashboards are useful for monitoring, measuring,
+        and analyzing relevant data in key areas. They take raw data from many
+        sources and clearly present it in a way that’s highly tailored to the
+        viewer’s needs—whether you’re a business leader, line of business
+        analyst, sales representative, marketer, and more.
+        <br />
+        Use dashboards to measure things like:
+        <ul className="list-disc p-4">
+          <li>Customer metrics</li>
+          <li>Financial information</li>
+          <li>Sales information</li>
+          <li>Web analytics</li>
+          <li>Manufacturing information</li>
+          <li>Human resources data</li>
+          <li>Marketing performance</li>
+          <li>Logistics information</li>
+        </ul>
+        Since dashboards are useful aggregation and visualization tools, they’re
+        highly versatile—used by professionals to analyze complex data or
+        subject matter experts to track or present data to non-subject matter
+        experts. Use them in your presentations to executives or other key
+        stakeholders to help them understand challenges, opportunities, where to
+        grow and make changes.
       </p>
+      <h3>The importance of dashboards</h3>
       <p>
-        Rhoncus mattis rhoncus urna neque viverra justo nec ultrices dui.
-        Praesent semper feugiat nibh sed pulvinar. Ultrices gravida dictum fusce
-        ut placerat orci nulla pellentesque. Malesuada proin libero nunc
-        consequat interdum varius sit amet. Lectus quam id leo in vitae. Sed
-        viverra tellus in hac habitasse platea dictumst. Vivamus at augue eget
-        arcu. Augue mauris augue neque gravida in.
+        Dashboards are important because they provide a platform for people to
+        make better, more informed, data-driven decisions. Since they’re
+        dynamic, interactive, and show near real-time data, they help you get a
+        more precise, in-the-moment understanding of what’s happening in the
+        world around you and navigate rapid, sometimes difficult changes.
       </p>
+      <h3>How to create a data dashboard</h3>
       <p>
-        Tincidunt vitae semper quis lectus nulla at volutpat diam. Gravida
-        dictum fusce ut placerat. Erat velit scelerisque in dictum non. Tempus
-        quam pellentesque nec nam aliquam sem et tortor consequat. Eu nisl nunc
-        mi ipsum faucibus. Cras fermentum odio eu feugiat pretium nibh. Vel
-        pharetra vel turpis nunc eget lorem dolor sed viverra. Sollicitudin
-        tempor id eu nisl nunc mi ipsum faucibus. Sed id semper risus in
-        hendrerit gravida rutrum. Eget nulla facilisi etiam dignissim. Erat
-        imperdiet sed euismod nisi. Risus in hendrerit gravida rutrum quisque
-        non tellus orci ac.
+        There are many different solutions to help you build dashboards:
+        Tableau, Excel, or Google Sheets. But at a basic level, here are
+        important steps to help you build a dashboard:
+        <ul className="list-disc p-4">
+          <li>Customer metrics</li>
+          <li>Financial information</li>
+          <li>Sales information</li>
+          <li>Web analytics</li>
+          <li>Manufacturing information</li>
+          <li>Human resources data</li>
+          <li>Marketing performance</li>
+          <li>Logistics information</li>
+        </ul>
       </p>
     </div>
   );
