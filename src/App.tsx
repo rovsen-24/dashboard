@@ -10,7 +10,7 @@ import { Docs } from "./pages/Docs";
 
 function Main() {
   return (
-    <div className="sm:p-5 text-xs md:text-base">
+    <div className="sm:p-7 text-xs md:text-base">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="docs" element={<Docs />} />

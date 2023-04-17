@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { FaTwitter, FaGithub, FaFacebook, FaInstagram } from "react-icons/fa";
 import { Logo } from "./logo";
-import { items } from "./navbar";
+import { listItems } from "./listItems";
 
 const icons: { path: string; title: React.ReactElement }[] = [
   { path: "", title: <FaTwitter /> },
@@ -18,14 +18,6 @@ const listIcons = icons.map((icon, index) => {
       className="text-gray-700 transition hover:text-gray-300/90"
     >
       {icon.title}
-    </Link>
-  );
-});
-
-const listItems = items.map((item, index) => {
-  return (
-    <Link key={index} to={item.path}>
-      {item.title}
     </Link>
   );
 });

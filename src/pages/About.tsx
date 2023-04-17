@@ -1,6 +1,6 @@
 export function About() {
   return (
-    <div className="">
+    <div className="lg:px-36 px-2 py-10 bg-gray-800/50">
       <h1 className="center">What is a dashboard?</h1>
       <p>
         In this day and age, understanding data is the key to making the best
@@ -19,19 +19,17 @@ export function About() {
       <p>
         One of the easiest ways to make data easy to understand for technical
         and non-technical audiences is to create a dashboard that easily
-        displays all of your data visualizations in one place. <br />
-        In this article, we will run through:
-        <ul className="list-disc p-4">
-          <li>Dashboard definition</li>
-          <li>How dashboards work</li>
-          <li>Uses</li>
-          <li>Importance</li>
-          <li>How to create a dashboard</li>
-          <li>Types of dashboards</li>
-          <li>Best practices</li>
-          <li>Benefits</li>
-        </ul>
+        displays all of your data visualizations in one place.
       </p>
+      <br />
+      In this article, we will run through:
+      <ul className="list-disc p-4">
+        <li>Dashboard definition</li>
+        <li>How dashboards work</li>
+        <li>Uses</li>
+        <li>Importance</li>
+        <li>How to create a dashboard</li>
+      </ul>
       <h3>Dashboard definition</h3>
       <p>
         A dashboard is a way of displaying various types of visual data in one
@@ -63,19 +61,21 @@ export function About() {
         and analyzing relevant data in key areas. They take raw data from many
         sources and clearly present it in a way that’s highly tailored to the
         viewer’s needs—whether you’re a business leader, line of business
-        analyst, sales representative, marketer, and more.
-        <br />
-        Use dashboards to measure things like:
-        <ul className="list-disc p-4">
-          <li>Customer metrics</li>
-          <li>Financial information</li>
-          <li>Sales information</li>
-          <li>Web analytics</li>
-          <li>Manufacturing information</li>
-          <li>Human resources data</li>
-          <li>Marketing performance</li>
-          <li>Logistics information</li>
-        </ul>
+        analyst, sales representative, marketer, and more.{" "}
+      </p>
+      <br />
+      Use dashboards to measure things like:
+      <ul className="list-disc p-4">
+        <li>Customer metrics</li>
+        <li>Financial information</li>
+        <li>Sales information</li>
+        <li>Web analytics</li>
+        <li>Manufacturing information</li>
+        <li>Human resources data</li>
+        <li>Marketing performance</li>
+        <li>Logistics information</li>
+      </ul>
+      <p>
         Since dashboards are useful aggregation and visualization tools, they’re
         highly versatile—used by professionals to analyze complex data or
         subject matter experts to track or present data to non-subject matter
@@ -95,18 +95,54 @@ export function About() {
       <p>
         There are many different solutions to help you build dashboards:
         Tableau, Excel, or Google Sheets. But at a basic level, here are
-        important steps to help you build a dashboard:
-        <ul className="list-disc p-4">
-          <li>Customer metrics</li>
-          <li>Financial information</li>
-          <li>Sales information</li>
-          <li>Web analytics</li>
-          <li>Manufacturing information</li>
-          <li>Human resources data</li>
-          <li>Marketing performance</li>
-          <li>Logistics information</li>
-        </ul>
+        important steps to help you build a dashboard:{" "}
       </p>
+      <ul className="list-decimal p-4">
+        <li>
+          <strong>Define your audience and goals: </strong>
+          Ask who you are building this dashboard for and what do they need to
+          understand? Once you know that, you can answer their questions more
+          easily with selected visualizations and data.
+        </li>
+        <li>
+          <strong>Choose your data: </strong>
+          Most businesses have an abundance of data from different sources.
+          Choose only what’s relevant to your audience and goal to avoid
+          overwhelming your audience with information.
+        </li>
+        <li>
+          <strong>Double-check your data: </strong>
+          Always make sure your data is clean and correct before building a
+          dashboard. The last thing you want is to realize in several months
+          that your data was wrong the entire time.
+        </li>
+        <li>
+          <strong>Choose your visualizations: </strong>
+          There are many different types of visualizations to use, such as
+          charts, graphs, maps, etc. Choose the best one to represent your data.
+          For example, bar and pie charts can quickly become overwhelming when
+          they include too much information.
+        </li>
+        <li>
+          <strong>Use a template: </strong>
+          When building a dashboard for the first time, use a template or
+          intuitive software to save time and headaches. Carefully choose the
+          best one for your project and don’t try to shoehorn data into a
+          template that doesn’t work.
+        </li>
+        <li>
+          <strong>Keep it simple: </strong>
+          Use similar colors and styles so your dashboard doesn’t become
+          cluttered and overwhelming.
+        </li>
+        <li>
+          <strong>Iterate and improve: </strong>
+          Once your dashboard is in a good place, ask for feedback from a
+          specific person in your core audience. Find out if it makes sense to
+          them and answers their questions. Take that feedback to heart and make
+          improvements for better adoption and understanding.
+        </li>
+      </ul>
     </div>
   );
 }

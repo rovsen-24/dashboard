@@ -1,6 +1,6 @@
 export function TermsAndPrivacy() {
   return (
-    <div>
+    <div className="lg:px-36 px-2 py-10 bg-gray-800/50">
       <h3>Introduction</h3>
       <p>
         This website is operated by Dashtop inc. The terms “we”, “us”, and “our”
