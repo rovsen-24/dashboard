@@ -61,7 +61,7 @@ export function About() {
         and analyzing relevant data in key areas. They take raw data from many
         sources and clearly present it in a way that’s highly tailored to the
         viewer’s needs—whether you’re a business leader, line of business
-        analyst, sales representative, marketer, and more.{" "}
+        analyst, sales representative, marketer, and more.
       </p>
       <br />
       Use dashboards to measure things like:
@@ -95,7 +95,7 @@ export function About() {
       <p>
         There are many different solutions to help you build dashboards:
         Tableau, Excel, or Google Sheets. But at a basic level, here are
-        important steps to help you build a dashboard:{" "}
+        important steps to help you build a dashboard:
       </p>
       <ul className="list-decimal p-4">
         <li>

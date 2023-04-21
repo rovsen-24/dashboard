@@ -1,4 +1,4 @@
-export function TermsAndPrivacy() {
+export function Privacy() {
   return (
     <div className="lg:px-36 px-2 py-10 bg-gray-800/50">
       <h3>Introduction</h3>

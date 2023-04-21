@@ -3,7 +3,7 @@ import { Home } from "./pages/Home";
 import { Contact } from "./pages/Contact";
 import { Dashboard } from "./pages/Dashboard";
 import { About } from "./pages/About";
-import { TermsAndPrivacy } from "./pages/TermsAndPrivacy";
+import { Privacy } from "./pages/Privacy";
 import { Navbar } from "./components/navbar";
 import { Foobar } from "./components/foobar";
 import { Docs } from "./pages/Docs";
@@ -17,7 +17,7 @@ function Main() {
         <Route path="contact" element={<Contact />} />
         <Route path="about" element={<About />} />
         <Route path="dashboard" element={<Dashboard />} />
-        <Route path="termsandprivacy" element={<TermsAndPrivacy />} />
+        <Route path="privacy" element={<Privacy />} />
       </Routes>
     </div>
   );
