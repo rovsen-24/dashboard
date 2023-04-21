@@ -5,11 +5,11 @@ export function Login() {
 
   return (
     <button
-      onClick={() => Auth()}
-      className="rounded-md cursor-pointer bg-teal-700 px-5 text-gray-200 py-2 font-medium transition hover:text-white hover:bg-teal-800"
-    >
-      Login
-    </button>
+        onClick={() => handleClick()}
+        className="rounded-md cursor-pointer bg-teal-700 px-5 text-gray-200 py-2 font-medium transition hover:text-white hover:bg-teal-800"
+      >
+        Login
+      </button>
   );
 }
 
