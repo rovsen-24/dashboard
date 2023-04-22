@@ -21,7 +21,7 @@ const listItems = items.map((item, index) => {
   );
 });
 
-interface ModalProps {
+interface modalProps {
   showModal: boolean;
   onClose: () => void;
   children?: React.ReactNode;
@@ -62,7 +62,7 @@ function ModalFooter() {
   );
 }
 
-function Modal({ showModal, onClose }: ModalProps) {
+function Modal({ showModal, onClose }: modalProps) {
   return (
     <>
       {showModal && (

@@ -15,6 +15,10 @@
     @apply text-xl font-medium
   }
 
+  h4 {
+    @apply text-lg font-semibold
+  }
+
   p {
     @apply sm:p-5 p-2 leading-snug tracking-tight 
   }
