@@ -19,6 +19,15 @@
     @apply text-lg font-semibold
   }
 
+  h5 {
+    @apply text-sm font-semibold
+  }
+
+  h6 {
+    @apply text-xs
+
+  }
+
   p {
     @apply sm:p-5 p-2 leading-snug tracking-tight 
   }

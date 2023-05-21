@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { FaTwitter, FaGithub, FaFacebook, FaInstagram } from "react-icons/fa";
 import { Logo } from "./logo";
-import { listItems } from "./listItems";
+import { links } from "./links";
 
 const icons: { path: string; title: React.ReactElement }[] = [
   { path: "", title: <FaTwitter /> },
@@ -36,7 +36,7 @@ export function Foobar() {
 
         <nav aria-label="Footer Nav" className="mt-4">
           <ul className="flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
-            {listItems}
+            {links}
           </ul>
         </nav>
 

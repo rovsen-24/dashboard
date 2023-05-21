@@ -3,7 +3,7 @@ import { Logo } from "./logo";
 import { Searchbar } from "./searchbar";
 import { Login } from "./login";
 import { useState } from "react";
-import { listItems } from "./listItems";
+import { links } from "./links";
 
 function ToggleMenu() {
   const [toggle, setToggle] = useState(false);
@@ -20,7 +20,7 @@ function ToggleMenu() {
         style={{ display: toggle ? "block" : "none" }}
       >
         <li className="col space-y-3 px-8">
-          {listItems} <Login />
+          {links} <Login />
         </li>
       </ul>
     </nav>
@@ -35,7 +35,7 @@ export function Navbar() {
         <div className="flex flex-1 center">
           <nav className="hidden md:block">
             <ul>
-              <li className="flex px-6 gap-6">{listItems}</li>
+              <li className="flex px-6 gap-6">{links}</li>
             </ul>
           </nav>
           <div className="flex w-full items-center justify-end gap-4">

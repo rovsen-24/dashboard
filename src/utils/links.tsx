@@ -19,7 +19,7 @@ const items: { path: string; title: string }[] = [
   },
 ];
 
-export const listItems = items.map((item, index) => {
+export const links = items.map((item, index) => {
   return (
     <Link key={index} to={item.path}>
       {item.title}

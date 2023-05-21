@@ -53,9 +53,7 @@ function ModalFooter() {
 
         <p className="mt-4 text-sm text-gray-500 sm:mt-0">
           Isn't have an account yet?
-          <button className="text-gray-700 underline">
-            Sign up
-          </button>
+          <button className="text-gray-700 underline">Sign up</button>
         </p>
       </div>
     </>
